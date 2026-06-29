@@ -85,3 +85,6 @@ app.post('/forward', async (req, res) => {
         res.status(500).json({ message: "Something went wrong." });
     }
 });
+
+// It keeps the server awake.
+app.listen(3000, () => console.log('Middleman is awake!'));
